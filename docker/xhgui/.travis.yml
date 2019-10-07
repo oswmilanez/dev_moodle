@@ -1,0 +1,21 @@
+language: php
+
+php:
+  - 7.2
+  - 7.1
+  - 7.0
+  - 5.6
+
+matrix:
+  include:
+    - php: 7.2
+      env: COVERAGE=1
+
+services:
+  - mongodb
+
+install:
+  - .travis/install.sh
+
+script:
+  - .travis/run.sh
