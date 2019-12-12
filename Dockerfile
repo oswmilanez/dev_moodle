@@ -60,6 +60,7 @@ RUN yum install -y \
      php-xmlrpc \
      php-mcrypt \ 
      php-zip \ 
+     php-ldap \
      php-devel \
      php-pear
 RUN pecl install mongodb
