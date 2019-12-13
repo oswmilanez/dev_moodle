@@ -95,6 +95,7 @@ RUN sed -i 's/;error_log\ =\ syslog/error_log\ =\ \/dev\/stdout/g' /etc/php.ini
 RUN sed -i 's/memory_limit\ =\ 128M/memory_limit\ =\ 1024M/g' /etc/php.ini
 RUN sed -i 's/max_execution_time\ =\ 30/max_execution_time\ =\ 300/g' /etc/php.ini
 RUN sed -i 's/max_input_time\ =\ 60/max_execution_time\ =\ 600/g' /etc/php.ini
+RUN sed -i 's/auto_prepend_file\ =\/auto_prepend_file\ =\ \/var\/xhgui\/external\/header.php/g' /etc/php.ini
 
 # Start Container
 COPY docker-entrypoint.sh /root/docker-entrypoint.sh
