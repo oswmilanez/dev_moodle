@@ -39,7 +39,7 @@ RUN yum install -y nginx
 RUN echo "NETWORKING=yes" > /etc/sysconfig/network
 
 # Install PHP 7.1
-RUN amazon-linux-extras enable php7.1
+RUN amazon-linux-extras enable php7.2
 RUN yum install -y \
      php \
      php-common \
