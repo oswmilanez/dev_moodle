@@ -97,7 +97,7 @@ RUN sed -i 's/max_execution_time\ =\ 30/max_execution_time\ =\ 300/g' /etc/php.i
 RUN sed -i 's/max_input_time\ =\ 60/max_execution_time\ =\ 600/g' /etc/php.ini
 RUN sed -i 's/upload_max_filesize\ =\ 2/upload_max_filesize\ =\ 1000/g' /etc/php.ini
 RUN sed -i 's/post_max_size\ =\ 8/post_max_size\ =\ 1000/g' /etc/php.ini
-
+RUN sed -i 's/;max_input_vars\ =\ 1000/max_input_vars\ =\ 5000/g' /etc/php.ini
 RUN sed -i 's/auto_prepend_file\ =/auto_prepend_file\ =\ \/var\/xhgui\/external\/header.php/g' /etc/php.ini
 
 # Start Container
