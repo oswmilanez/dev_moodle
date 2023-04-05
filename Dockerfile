@@ -103,4 +103,5 @@ RUN sed -i 's/auto_prepend_file\ =/auto_prepend_file\ =\ \/var\/xhgui\/external\
 # Start Container
 COPY docker-entrypoint.sh /root/docker-entrypoint.sh
 RUN chmod +x /root/docker-entrypoint.sh 
+
 ENTRYPOINT ["./root/docker-entrypoint.sh"]
