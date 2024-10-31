@@ -1,10 +1,8 @@
 #!/bin/bash
 
-#Mongo
-mongod &
-mongo < /root/xhprof_indexes.js
-
 #php
+mkdir /run/php-fpm/
+touch /run/php-fpm/www.sock
 /usr/sbin/php-fpm
 
 #nginx
