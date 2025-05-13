@@ -3,7 +3,7 @@
 # also modifying source, would not need to rebuild extensions layer.
 # Author: Elan Ruusamäe <glen@pld-linux.org>
 
-FROM php:7.4.33-fpm-alpine AS base
+FROM php:7-fpm-alpine AS base
 
 RUN set -x \
     && apk add --no-cache --virtual .build-deps ${PHPIZE_DEPS} \
